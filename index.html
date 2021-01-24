@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+    crossorigin="anonymous" />
+    <link rel="icon" href="to-do-list.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="todo-h1">To Do</h1>
+        <img src="to-do-list.png" alt="to do list">
+        <div class="toggle-container">
+            <h2 class="mode">Day</h2>
+            <label for="" class="switch">
+                <input class="checkbox" type="checkbox">
+                <div class="slider"></div>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <input type="text" maxlength="50" class="todo-input" placeholder="anything to do?">
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+        </form>
+        <div class="select">
+            <select name="todos" id="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </main>
+
+    <section>
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
